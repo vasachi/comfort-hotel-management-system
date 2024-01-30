@@ -1,0 +1,46 @@
+<!DOCTYPEJS🏩 html>
+<html>
+<head>
+<title>reservation form🏩 </title>
+</head>
+<body align="center" bgcolor="brown" text="black">
+<form action="reservationinsert.php" method="post">
+<h1>THE JS FARM HOTEL RESERVATION FORM</h1>
+
+<fieldset>
+<label>FULL NAME </label> <input type="text" name="full_names"><br><br>
+<label>NATIONAL ID NUMBER </label>    <input type="text" name="id_number"><br><br>
+<label>TELEPHONE NUMBER</label>    <input type="text" name="telephone"><br><br>
+<label>E-MAIL ADDRESS </label>    <input type="text" name="email"><br><br>
+<label>NUMBER OF GUESTS(including children) </label>    <input type="text" name="guests_number"><br><br>
+</fieldset><br><br>
+
+<fieldset>
+<label>ROOM TYPE </label> 
+<select name="room_type">
+<option value="PRESIDENTIAL SUIT" name="room_type">PRESIDENTIAL SUIT</option>
+<option value="ONE BEDROOM" name="room_type">ONE BEDROOM</option>
+<option value="TWO BEDROOM" name="room_type">TWO BEDROOM</option>
+<option value="THREE BEDROOM" name="room_type">THREE BEDROOM</option>
+<option value="FOUR BEDROOM" name="room_type">FOUR BEDROOM</option>
+<option value="SINGLE ROOM" name="room_type">SINGLE ROOM</option>
+</select><br><br>
+
+<label>CHECK IN DATE</label> <input type="date" name="checkin_date"><br><br>
+<label>CHECK OUT DATE </label> <input type="date" name="checkout_date"><br><br>
+<label>SPECIAL REQUESTS </label><br><br> <textarea name="special_requests" cols=30 rows=10 >SPECIAL REQUEST FOR YOUR RESERVATION</textarea><br><br>
+<label>RESERVATION DEPOSIT FEE OF KSH 2500</label><br><br>
+<label>RESERVATION DEPOSIT PAYMENT METHOD<br>M-PESA: PAYBILL NO 1234 AC/NAME: JS FARM HOTEL<br><br>BANK ACCOUNT:EQUITY BANK AC/NO 123456789<br><br></label>
+
+<label>PLEASE SELECT DEPOSIT PAYMENT METHOD</label>
+<select name="deposit_method">
+<option value="M-PESA" name="deposit_method">M-PESA</option>
+<option value="BANK ACCOUNT" name="deposit_method">BANK ACCOUNT</option>
+</select><br><br>
+
+</fieldset><br><br>
+
+<input type="submit" value="BOOK">
+</form>
+</body>
+</html>

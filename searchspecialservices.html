@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>specialised search</title>
+<script>
+function logout() {
+    
+    window.location.href = 'comfortprofile.html'; 
+    
+    // prevent the user from going back to the previous page
+    window.history.pushState(null, null, window.location.href='comfortprofile.html');
+    window.addEventListener('popstate', function logout() {
+        window.history.pushState(null, null, window.location.comfortprofile.html');
+    });
+}
+</script>
+</head>
+<body align="center">
+<h1><b><i>ENTER THE CUSTOMER'S ID NUMBER TO CONFIRM SPECIAL SERVICES RESERVATION </h1>
+<form action="displayspecialsearch2.php" method="post">
+
+
+<label>CUSTOMER'S ID NUMBER</label>
+<input type="text" name="key">
+<br><br>
+
+<input type="submit" value="search">
+
+<input type="button" name="log"  value="LOGOUT" onclick="logout()">
+	<input type="reset" value="RESET">
+</form>
+</body>
+</html>

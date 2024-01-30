@@ -1,0 +1,47 @@
+<!DOCTYPEJS HTML>
+<html>
+<head>
+
+<title>lOGIN TO THE JS FARM HOTEL🏨 DATABASE </title>
+
+
+<script>
+function myfunction()
+{
+var un=document.forms["myform"]["uname"].value;
+var pw=document.forms["myform"]["pass"].value;
+if(un=="admin1" && pw=="12345678")
+{
+window.location.href="http://localhost/logintry1/kiama/database landing.html";
+}
+
+else
+{
+alert("invalid username and password");
+}
+}
+</script>
+</head>
+
+<body bgcolor="purple" align="center">
+  
+
+<h1>WELCOME TO THE JS FARM HOTEL🏨 DATABASE  SYSTEM</h1>
+<h2>LOGIN</h2>
+<div class="div1">
+<form name="myform" method="post">
+<label>USERNAME👤 </label> 
+     
+<input type="text" name="uname" class="inputtext" placeholder="username">
+<br><br>
+<label>PASSWORD🗝 </label>
+
+<input type="password" name="pass" class="inputtext" placeholder="password">
+<br><br>
+<input type="button" name="log" id="logButton" value="LOGIN" onclick="myfunction()">
+<input type="reset" value="RESET">
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPEJS🏩 html>
+<html>
+<head>
+<title>special services </title>
+</head>
+<body align="center" bgcolor="brown" text="black">
+<form action="specialserviceinsert.php" method="post">
+<h1>THE JS HOTEL SPECIAL SERVICES FORM</h1>
+
+<fieldset>
+<label>FULL NAME </label> <input type="text" name="full_names"><br><br>
+<label>NATIONAL ID NUMBER </label>    <input type="text" name="id_number"><br><br>
+<label>TELEPHONE NUMBER</label>    <input type="text" name="telephone"><br><br>
+<label>E-MAIL ADDRESS </label>    <input type="text" name="email"><br><br>
+</fieldset><br><br>
+
+<fieldset>
+<label>TYPE OF SERVICE </label> 
+<select name="service_type">
+<option value="CATERING SERVICES" name="service_type">CATERING SERVICES</option>
+<option value="FOOD DELIVERY" name="service_type">FOOD DELIVERY</option>
+<option value="CONFERENCING FACILITY" name="service_type">CONFERENCING FACILITY</option>
+<option value="CEREMONY/PARTY HOSTING" name="service_type">CEREMONY/PARTY HOSTING</option>
+</select><br><br>
+
+<label>ESTIMATED NUMBER OF PEOPLE</label> <input type="text" name="estimated_guests"><br><br>
+<label>LOCATION/VENUE ADDRESS</label> <input type="text" name="venue"><br><br>
+<label>DATE OF OCCASSION </label> <input type="date" name="occassion_date"><br><br>
+<label>SPECIAL REQUESTS </label><br><br> <textarea name="special_requests" cols=30 rows=10 >PLEASE SPECIFY THE TYPE OF MEALS TO BE SERVED</textarea><br><br>
+<label>RESERVATION DEPOSIT FEE OF KSH 5000</label><br><br>
+<label>RESERVATION DEPOSIT PAYMENT METHOD<br>M-PESA: PAYBILL NO 1234 AC/NAME: THE JS HOTEL<br><br>BANK ACCOUNT:EQUITY BANK AC/NO 123456789<br><br></label>
+
+<label>PLEASE SELECT DEPOSIT PAYMENT METHOD</label>
+<select name="deposit_method">
+<option value="M-PESA" name="deposit_method">M-PESA</option>
+<option value="BANK ACCOUNT" name="deposit_method">BANK ACCOUNT</option>
+</select><br><br>
+
+</fieldset><br><br>
+
+<input type="submit" value="BOOK">
+</form>
+</body>
+</html>
